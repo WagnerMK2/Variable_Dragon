@@ -85,6 +85,10 @@ float v1; #initailizes map input variable
 float AmpOver = 0 #amperage threshold that signals a motor over run
 
 
+
+VOID loop() {
+
+
 # serial setup/debugging
 
 Serial.begin(9600);
@@ -101,8 +105,6 @@ if mode AUTO
 	close valve
 	goto AUTO loop
 
-
-VOID loop() {
 
 # OFF loop
 OFFMODE:
